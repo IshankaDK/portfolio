@@ -33,7 +33,7 @@ section {
 .title {
     position: relative;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     padding-top: 20px;
     margin-bottom: 60px;
@@ -60,7 +60,7 @@ section {
 .fa-header {
     position: fixed;
     width: 100%;
-    z-index: 4;
+    z-index: 900;
     padding: 10px 0;
     font-family: 'Poppins', sans-serif;
     background: #1E272E;
@@ -125,6 +125,7 @@ a .page_nav {
     font-family: 'Roboto', sans-serif;
     background-size: cover;
     z-index: 1;
+    /*overflow: hidden;*/
 }
 
 .home .home-content {
@@ -214,27 +215,28 @@ a .page_nav {
 
 .skills-content {
     display: grid;
-    grid-gap: 20px 50px;
+    grid-gap: 20px 40px;
     align-items: center;
     justify-content: space-between;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     color: #F7F1E3;
-    /*font-size: 25px;*/
-    height: 450px;
+    height: 50vh;
+    max-height: max-content;
+    width: 90vw;
 }
 
 .skills-content section {
     padding: 10px 10px;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border: 2px solid #2D98DA;
     cursor: pointer;
 }
 
 .skills-content section:hover {
-    width: 163px;
-    height: 163px;
+    width: 153px;
+    height: 153px;
 }
 
 .skills-content .java-icon {
@@ -284,6 +286,16 @@ a .page_nav {
 
 .skills-content .linux-icon {
     background: url("../img/icon/skills-icon/icons8-linux-96.png");
+    background-size: cover;
+}
+
+.skills-content .angular-icon {
+    background: url("../img/icon/skills-icon/icons8-angularjs-480.png");
+    background-size: cover;
+}
+
+.skills-content .spring-icon {
+    background: url("../img/icon/skills-icon/icons8-spring-logo-480.png");
     background-size: cover;
 }
 
@@ -545,4 +557,223 @@ footer > nav > div {
     color: #CED6E0;
     text-align: center;
     padding-top: 20px;
+}
+
+
+/*Responsive part*/
+
+@media (max-width: 425px){
+    .fa-header {
+        position: fixed;
+        width: 100%;
+        z-index: 900;
+        font-family: 'Poppins', sans-serif;
+        background: #1E272E;
+        opacity: 1;
+    }
+
+    .about .about-content .left {
+        width: 100%;
+        padding-left: 20px;
+        flex: 100%;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-content .right .seimg {
+        width: 200px;
+    }
+
+    .about .about-content .left .downloadcv {
+        width: 160px;
+        font-size: 14px;
+        height: 35px;
+        font-weight: 800;
+        padding: 5px 30px;
+    }
+
+    .about .about-content .left .contactme {
+        width: 160px;
+        font-size: 14px;
+        height: 35px;
+        font-weight: 800;
+        padding: 5px 30px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .about .about-content .left {
+        width: 100%;
+        padding-left: 20px;
+        flex: 100%;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-content .right .seimg {
+        width: 300px;
+    }
+
+    /*.skills-content {*/
+    /*    grid-template-rows: repeat(5, 1fr);*/
+    /*    grid-template-columns: repeat(2, 1fr);*/
+    /*}*/
+    /*.skills-content section {*/
+    /*    width: 60px;*/
+    /*    height: 60px;*/
+    /*}*/
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .about .about-content .left {
+        width: 100%;
+        padding-left: 20px;
+        flex: 100%;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-content .right .seimg {
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width: 807px) {
+
+    .about .about-content .left .downloadcv {
+        margin: 0;
+    }
+
+    .about .about-content .right .seimg {
+        width: 200px;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 30px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 50px;
+    }
+
+}
+
+@media (max-width: 1259px) {
+    .about .about-content .left {
+        width: 100%;
+        padding-left: 20px;
+        flex: 100%;
+    }
+
+    .about .about-content .right {
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-content .right .seimg {
+        width: 400px;
+        margin: 0;
+    }
+    .skills-content {
+        grid-gap: 20px;
+         /*grid-template-rows: repeat(5, 1fr);*/
+         /*grid-template-columns: repeat(2, 1fr);*/
+     }
+    .skills-content section {
+        width: 120px;
+        height: 120px;
+    }
+    .skills-content section:hover {
+        width: 122px;
+        height: 122px;
+    }
+}
+
+@media (max-width: 687px) {
+    .about .about-content .left .downloadcv {
+        margin-top: 10px;
+    }
+
+    .about .about-content .right {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .about .about-content .right .seimg {
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 910px) {
+    .skills-content {
+        /*grid-gap: 40px;*/
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /*.skills-content section {*/
+    /*    width: 150px;*/
+    /*    height: 150px;*/
+    /*}*/
+}
+
+@media (max-width: 810px) {
+    .skills-content {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 610px) {
+    .skills-content {
+        grid-gap: 5px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .max-width {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 425px) and (max-width: 610px) {
+    .max-width {
+        padding-left: 30px;
+    }
 }
