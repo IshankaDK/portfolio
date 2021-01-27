@@ -130,7 +130,7 @@ a .page_nav {
     /*overflow: hidden;*/
 }
 .home .max-width {
-    margin: auto 0 auto 30px;
+    margin: auto;
 }
 .home .home-content {
     position: sticky;
@@ -815,6 +815,7 @@ footer > nav > div {
     }
     .max-width {
         padding-left: 70px;
+        padding-right: 70px;
     }
     .skills-content section {
         width: 100px;
