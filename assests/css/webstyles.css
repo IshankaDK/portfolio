@@ -25,7 +25,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
+/*Content Style Code*/
 section {
     padding: 100px 0;
 }
@@ -66,7 +66,10 @@ section {
     background: #1E272E;
     opacity: 1;
 }
-
+.fa-header .sticky{
+    padding: 15px 0;
+    background: crimson;
+}
 .fa-header .max-width {
     display: flex;
     align-items: center;
@@ -80,7 +83,9 @@ section {
     font-size: 35px;
     font-weight: 600;
 }
+.fa-header .logo:hover{
 
+}
 .fa-header .logo a span {
     color: #EA2027;
 }
@@ -91,7 +96,9 @@ section {
     display: inline-block;
     margin: 0;
 }
-
+.fa-header .menu li a:hover {
+   color: #EA2027;
+}
 .fa-header .menu li a {
     display: block;
     color: #CED6E0;
@@ -205,17 +212,22 @@ a .page_nav {
 }
 
 .about .about-content .left .contactme {
-    background-color: #3867D6;
+    background-color: #0984e3;
     border: 3px solid #2D98DA;
     margin-right: 75px;
-
 }
-
+.about .about-content .left .contactme:hover {
+    background-color: initial;
+    color: #0984e3;
+}
 .about .about-content .left .downloadcv {
     background-color: #20BF6B;
     border: 3px solid #68e8a7;
 }
-
+.about .about-content .left .downloadcv:hover {
+    background-color: initial;
+    color: #20BF6B;
+}
 /*skills section*/
 
 .skills-content {
@@ -227,11 +239,6 @@ a .page_nav {
     grid-template-columns: repeat(6, 1fr);
     /*grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));*/
     color: #F7F1E3;
-
-    /*height: 60vh;*/
-    /*max-height: max-content;*/
-    /*width: 80vw;*/
-
 }
 
 .skills-content section {
@@ -357,6 +364,7 @@ a .page_nav {
 }
 
 /*portfolio section  */
+
 .portfolio .projects {
     display: flex;
     flex-wrap: wrap;
@@ -451,6 +459,8 @@ a .page_nav {
     border: 5px solid #2F3640;
     border-radius: 10px;
 }
+
+/*contact section*/
 
 .contact-content {
     display: flex;
@@ -556,6 +566,8 @@ a .page_nav {
     background: #2F3640;
     color: #20BF6B;
 }
+
+/*footer section*/
 
 footer > nav > div {
     background: #1e272e;
