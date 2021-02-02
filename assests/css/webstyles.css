@@ -15,15 +15,15 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #2F3640;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #EA2027;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background: rgba(234, 32, 39, 0.85);
 }
 
 /*Content Style Code*/
@@ -65,7 +65,9 @@ section {
     padding: 10px 0;
     font-family: 'Poppins', sans-serif;
     background: #1E272E;
-    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
 .fa-header .max-width {
@@ -120,19 +122,22 @@ a .page_nav {
     min-height: 500px;
     background-size: cover;
     z-index: -5;
+    animation-name: fadeInOpacity;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
 .home {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
-    /*min-height: 500px;*/
     color: #CED6E0;
     background-color: rgba(30, 39, 46, 0.75);
     font-family: 'Roboto', sans-serif;
-    /*background-size: cover;*/
     z-index: 1;
-    /*overflow: hidden;*/
+    animation-name: fadeInOpacity;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
 }
 
 .home .max-width {
@@ -179,7 +184,6 @@ a .page_nav {
     background: rgba(45, 52, 54, 0.9);
     color: #F7F1E3;
     font-size: 25px;
-    /*height: 450px;*/
     padding: 50px;
 }
 
@@ -253,10 +257,12 @@ a .page_nav {
     cursor: pointer;
 }
 
-/*.skills-content section:hover {*/
-/*    width: 153px;*/
-/*    height: 153px;*/
-/*}*/
+.skills-content section:hover {
+    background-color: rgba(63, 87, 108, 0.51);
+    border: 3px solid #0080d0;
+    transform: scale(1.03);
+
+}
 
 .skills-content .java-icon {
     background: url("../img/icon/skills-icon/icons8-java-480.png");
@@ -581,6 +587,15 @@ footer > nav > div {
     padding-top: 20px;
 }
 
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /*Responsive part*/
 
@@ -994,6 +1009,7 @@ footer > nav > div {
     .contact .contact-content .details .box .info .sub-title {
         font-size: 25px;
     }
+
     .contact .right form .field {
         height: 60px;
         margin-bottom: 25px;
@@ -1020,6 +1036,7 @@ footer > nav > div {
     .contact .right form .button button {
         font-size: 30px;
     }
+
     footer > nav > div {
         height: 70px;
         font-size: 30px;
