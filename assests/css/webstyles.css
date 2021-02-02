@@ -25,6 +25,7 @@ html {
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
 /*Content Style Code*/
 section {
     padding: 100px 0;
@@ -66,10 +67,7 @@ section {
     background: #1E272E;
     opacity: 1;
 }
-.fa-header .sticky{
-    padding: 15px 0;
-    background: crimson;
-}
+
 .fa-header .max-width {
     display: flex;
     align-items: center;
@@ -83,9 +81,7 @@ section {
     font-size: 35px;
     font-weight: 600;
 }
-.fa-header .logo:hover{
 
-}
 .fa-header .logo a span {
     color: #EA2027;
 }
@@ -96,9 +92,11 @@ section {
     display: inline-block;
     margin: 0;
 }
+
 .fa-header .menu li a:hover {
-   color: #EA2027;
+    color: #EA2027;
 }
+
 .fa-header .menu li a {
     display: block;
     color: #CED6E0;
@@ -136,9 +134,11 @@ a .page_nav {
     z-index: 1;
     /*overflow: hidden;*/
 }
+
 .home .max-width {
     margin: auto;
 }
+
 .home .home-content {
     position: sticky;
     padding-top: 15%;
@@ -216,18 +216,22 @@ a .page_nav {
     border: 3px solid #2D98DA;
     margin-right: 75px;
 }
+
 .about .about-content .left .contactme:hover {
     background-color: initial;
     color: #0984e3;
 }
+
 .about .about-content .left .downloadcv {
     background-color: #20BF6B;
     border: 3px solid #68e8a7;
 }
+
 .about .about-content .left .downloadcv:hover {
     background-color: initial;
     color: #20BF6B;
 }
+
 /*skills section*/
 
 .skills-content {
@@ -580,15 +584,7 @@ footer > nav > div {
 
 /*Responsive part*/
 
-@media (max-width: 425px){
-    .fa-header {
-        position: fixed;
-        width: 100%;
-        z-index: 900;
-        font-family: 'Poppins', sans-serif;
-        background: #1E272E;
-        opacity: 1;
-    }
+@media (max-width: 425px) {
 
     .about .about-content .left {
         width: 100%;
@@ -649,10 +645,12 @@ footer > nav > div {
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: repeat(2, 1fr);
     }
+
     .skills-content section {
         width: 60px;
         height: 60px;
     }
+
     .skills-content section:hover {
         width: 60px;
         height: 60px;
@@ -696,6 +694,7 @@ footer > nav > div {
     .about .about-content .left a {
         margin: 12px 75px 0px 0px;
     }
+
     .about .about-content .right .seimg {
         width: 200px;
     }
@@ -732,28 +731,34 @@ footer > nav > div {
         width: 400px;
         margin: 0;
     }
+
     .skills-content {
         grid-gap: 20px;
-         /*grid-template-rows: repeat(5, 1fr);*/
-         /*grid-template-columns: repeat(2, 1fr);*/
-     }
+        /*grid-template-rows: repeat(5, 1fr);*/
+        /*grid-template-columns: repeat(2, 1fr);*/
+    }
+
     .skills-content section {
         width: 120px;
         height: 120px;
         align-content: center;
     }
+
     .skills-content section:hover {
         width: 120px;
         height: 120px;
     }
+
     .services .service-list section {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .portfolio .projects section {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
     .portfolio .assignment section {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -769,14 +774,17 @@ footer > nav > div {
     .about .about-content .right .seimg {
         width: 200px;
     }
+
     .services .service-list section {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .portfolio .projects section {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .portfolio .assignment section {
         width: 100%;
         margin-bottom: 20px;
@@ -789,10 +797,12 @@ footer > nav > div {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(4, 1fr);
     }
+
     .skills-content section {
         width: 150px;
         height: 150px;
     }
+
     .skills-content section:hover {
         width: 150px;
         height: 150px;
@@ -825,14 +835,17 @@ footer > nav > div {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: repeat(4, 1fr);
     }
+
     .max-width {
         padding-left: 70px;
         padding-right: 70px;
     }
+
     .skills-content section {
         width: 100px;
         height: 100px;
     }
+
     .skills-content section:hover {
         width: 100px;
         height: 100px;
@@ -845,10 +858,171 @@ footer > nav > div {
         padding-right: 30px;
     }
 }
-@media (max-width: 490px){
+
+@media (max-width: 490px) {
     .skills-content {
         grid-gap: 5px;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+@media (min-width: 1500px) and (max-width: 2560px) {
+
+    .max-width {
+        max-width: 2300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+
+    .home .home-content .text-1 {
+        font-size: 70px;
+    }
+
+    .home .home-content .text-2 {
+        font-size: 90px;
+    }
+
+    .home .home-content .text-3 {
+        font-size: 120px;
+    }
+
+    .fa-header .logo a {
+        font-size: 50px;
+    }
+
+    .fa-header .menu li a {
+        font-size: 30px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .about-content {
+        font-size: 30px;
+    }
+
+    .about .about-content .left {
+        width: 60%;
+    }
+
+    .about .about-content .right {
+        width: 30%;
+        margin-left: 100px;
+    }
+
+    .about .about-content .right .seimg {
+        height: 450px;
+        width: 500px;
+    }
+
+    .skills-content section {
+        width: 200px;
+        height: 200px;
+    }
+
+    .services .service-list section {
+        width: 350px;
+        height: 350px;
+    }
+
+    .service-icon {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 100px;
+        font-size: 80px;
+    }
+
+    .services-title {
+        font-size: 26px;
+    }
+
+    .portfolio .projects section {
+        width: 350px;
+        height: 350px;
+    }
+
+    .project-icon {
+        width: 150px;
+        height: 150px;
+        font-size: 80px;
+    }
+
+    .project-title, .assignment-title {
+        font-size: 30px;
+    }
+
+    .portfolio .projects section > p {
+        font-size: 16px;
+    }
+
+    .portfolio .assignment section {
+        height: 350px;
+    }
+
+    .portfolio .assignment .assignment-image {
+        margin-top: 30px;
+        width: 100%;
+        height: 200px;
+    }
+
+    .contact .contact-content .left p {
+        font-size: 25px;
+    }
+
+    .contact .contact-content .details {
+        margin: 50px 0;
+    }
+
+    .contact .contact-content .details .box {
+        height: 100px;
+    }
+
+    .contact .contact-content .details .box i {
+        font-size: 50px;
+    }
+
+    .contact .contact-content .details .box .info {
+        margin-left: 30px;
+    }
+
+    .contact .contact-content .details .box .info .detail-title {
+        font-size: 25px;
+    }
+
+    .contact .contact-content .details .box .info .sub-title {
+        font-size: 25px;
+    }
+    .contact .right form .field {
+        height: 60px;
+        margin-bottom: 25px;
+    }
+
+    .contact .right form .textarea {
+        height: 100px;
+        margin-bottom: 25px;
+    }
+
+    .contact .right form .field input, textarea {
+        font-size: 25px;
+    }
+
+    .message-me-text {
+        font-size: 25px;
+    }
+
+    .contact .right form .button {
+        width: 250px;
+        height: 70px;
+    }
+
+    .contact .right form .button button {
+        font-size: 30px;
+    }
+    footer > nav > div {
+        height: 70px;
+        font-size: 30px;
+    }
+}
+
