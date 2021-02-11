@@ -224,6 +224,7 @@ a .page_nav {
 .about .about-content .left .contactme:hover {
     background-color: initial;
     color: #0984e3;
+    transform: scale(1.02);
 }
 
 .about .about-content .left .downloadcv {
@@ -234,6 +235,7 @@ a .page_nav {
 .about .about-content .left .downloadcv:hover {
     background-color: initial;
     color: #20BF6B;
+    transform: scale(1.02);
 }
 
 /*skills section*/
@@ -261,7 +263,6 @@ a .page_nav {
     background-color: rgba(63, 87, 108, 0.51);
     border: 3px solid #0080d0;
     transform: scale(1.03);
-
 }
 
 .skills-content .java-icon {
@@ -547,6 +548,14 @@ a .page_nav {
     resize: none;
 }
 
+.contact .right form .field input:hover {
+    border: 1px solid #FF9F1A;
+}
+
+.contact .right form .field textarea:hover {
+    border: 1px solid #FF9F1A;
+}
+
 .message-me-text {
     font-size: 20px;
     font-weight: 600;
@@ -575,6 +584,7 @@ a .page_nav {
 .contact .right form .button button:hover {
     background: #2F3640;
     color: #20BF6B;
+    transform: scale(1.02);
 }
 
 /*footer section*/
@@ -666,10 +676,6 @@ footer > nav > div {
         height: 60px;
     }
 
-    .skills-content section:hover {
-        width: 60px;
-        height: 60px;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -759,11 +765,6 @@ footer > nav > div {
         align-content: center;
     }
 
-    .skills-content section:hover {
-        width: 120px;
-        height: 120px;
-    }
-
     .services .service-list section {
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -818,11 +819,6 @@ footer > nav > div {
         height: 150px;
     }
 
-    .skills-content section:hover {
-        width: 150px;
-        height: 150px;
-    }
-
     .contact .contact-content .left {
         width: 100%;
         padding-left: 20px;
@@ -857,11 +853,6 @@ footer > nav > div {
     }
 
     .skills-content section {
-        width: 100px;
-        height: 100px;
-    }
-
-    .skills-content section:hover {
         width: 100px;
         height: 100px;
     }
